@@ -33,6 +33,7 @@ function simulatedResults() {
 }
 
 //display the values of each array as unordered lists in sales.html
+// need to debug in the am with TA help
 
 function display() {
   let locationName = Location;
