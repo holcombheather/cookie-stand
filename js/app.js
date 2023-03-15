@@ -17,9 +17,22 @@ function Location(city, minCust, maxCust, avgPurchase) {
   this.cookiesPerHour = [];
 }
 
-let seattle = new Location('Seattle', 23, 65, 6.3);
+Location.prototype.generateRandom = function(min, max) {
+  return Math.ceil(Math.random() * (max - min)) + min;
+};
 
-console.log(seattle);
+let seattle = new Location('Seattle', 23, 65, 6.3);
+let tokyo = new Location('Tokyo', 3, 24, 1.2);
+let dubai = new Location ('Dubai', 11, 38, 3.7);
+let paris = new Location('Paris', 20, 38, 2.3);
+let lima = new Location('Lima', 2, 16, 4.6);
+
+
+console.log(seattle.generateRandom(1, 5));
+console.log(tokyo);
+console.log(dubai);
+console.log(paris);
+console.log(lima);
 
 // let seattleList = document.getElementById('seattleData');
 // let tokyoList = document.getElementById('tokyoData');
