@@ -8,16 +8,18 @@ let hours = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '
 console.log(hours);
 
 
-function Location(city) {
+function Location(city, minCust, maxCust, avgPurchase) {
   this.city = city;
-  this.minCust = this.minCust;
-  this.maxCust = this.maxCust;
-  this.avgPurchase = this.avgPurchase;
-  this.customerPerHour = generateCustomersPerHour () {};
-  this.cookiesPerHour = generateCookiesPerHour () {};
+  this.minCust = minCust;
+  this.maxCust = maxCust;
+  this.avgPurchase = avgPurchase;
+  this.customerPerHour = [];
+  this.cookiesPerHour = [];
 }
 
-Location.prototype.
+let seattle = new Location('Seattle', 23, 65, 6.3);
+
+console.log(seattle);
 
 // let seattleList = document.getElementById('seattleData');
 // let tokyoList = document.getElementById('tokyoData');
