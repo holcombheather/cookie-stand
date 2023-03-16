@@ -60,7 +60,7 @@ Location.prototype.drawRow = function() {
   tableEl.appendChild(tableRow);
 };
 
-Location.prototype.drawHeaderRow = function drawHeaderRow() {
+function drawHeaderRow() {
   const headerRow = document.createElement('tr');
   const emptyHeader = document.createElement('th');
   headerRow.appendChild(emptyHeader);
@@ -76,9 +76,9 @@ Location.prototype.drawHeaderRow = function drawHeaderRow() {
   headerRow.appendChild(totalHeader);
 
   tableEl.appendChild(headerRow);
-};
+}
 
-Location.prototype.drawFooterRow = function drawFooterRow() {
+function drawFooterRow() {
   const footerRow = document.createElement('tr');
   const totalFooter = document.createElement('th');
   totalFooter.textContent = 'Totals';
@@ -104,7 +104,7 @@ Location.prototype.drawFooterRow = function drawFooterRow() {
   footerRow.appendChild(grandTotalFooter);
 
   tableEl.appendChild(footerRow);
-};
+}
 
 let seattle = new Location('Seattle', 23, 65, 6.3);
 cookiedex.push(seattle);
@@ -121,11 +121,6 @@ cookiedex.push(paris);
 let lima = new Location('Lima', 2, 16, 4.6);
 cookiedex.push(lima);
 
-drawHeaderRow();
-cookiedex.forEach(location => location.drawRow());
-drawFooterRow();
-
-
 
 seattle.generateCookiesPerHour();
 tokyo.generateCookiesPerHour();
@@ -139,6 +134,6 @@ console.log('Cookies per hour: ', dubai.cookiesPerHour);
 console.log('Cookies per hour: ', paris.cookiesPerHour);
 console.log('Cookies per hour: ', lima.cookiesPerHour);
 
-
-
-
+drawHeaderRow();
+cookiedex.forEach(location => location.drawRow());
+drawFooterRow();
