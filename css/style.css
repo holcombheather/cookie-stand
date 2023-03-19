@@ -5,6 +5,22 @@ html {
 h1 {
   font-family: "Garet";
   /* color: #011d42; */
+  font-size: xx-large;
+}
+
+h2 {
+  font-family: "Times Neue Roman";
+  font-style: italic;
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
 }
 /* Header */
 
@@ -21,6 +37,7 @@ header {
   margin: 10px;
 
 } 
+
 nav a {
   font-family: "Helvetica", sans-serif;
   color: #efdc95;
@@ -35,7 +52,7 @@ nav a {
 
 .hero {
   align-items: center;
-  background-color: #efdc95;
+  background-color:#edddc8
 }
 
 .hero img {
@@ -50,8 +67,29 @@ nav a {
   background-color: #edddc8;
   color: #011d42;
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.story h1, p {
+  margin: 20px;
+  max-width: 90%;
+}
+
+.story img {
+  width: 20%;
+  margin: 20px;
+}
+
+.menu {
+  background-color: #a5c3c2;
+  
+}
+.merch {
+  background-image: url(img/backgroundfish);
+  background-repeat: repeat-x;
+}
 
   table {
     border-collapse: collapse;
