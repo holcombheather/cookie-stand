@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width">
-        <title>Cookie Sales Data</title>
+        <title>Contact Us</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reset.css">
     </head>
@@ -11,37 +11,26 @@
         <header>
                 <a href="index.html"><img id="logo" src="img/1.png"></a>
                 <nav>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="locations.html">Locations</a>
                     <a href="index.html">Home</a>
+                    <a href="locations.html">Locations</a>
+                    <a href="sales.html">Sales</a>
+
                 </nav>
         </header>
         <main>
-
-            <section class="newForm">
-                <h2>Form</h2>
-                <form id="new-location-form">
+            <h1>Contact</h1>
+            <section class="contact">
+                <div>
+                    <h2>Get in Touch</h2>
+                    <p>Feel free to contact us with questions.</p>
+                    <p>info@salmoncookies.com</p>
+                </div>
+                <form id="contactForm">
                     <fieldset>
-                      <legend>Add New Cookie Stand Location</legend>
-                      <label for="city">City:</label>
-                      <input type="text" id="city" name="city" required>
-                  
-                      <label for="minCust">Minimum Customers:</label>
-                      <input type="number" id="minCust" name="minCust" required>
-                  
-                      <label for="maxCust">Maximum Customers:</label>
-                      <input type="number" id="maxCust" name="maxCust" required>
-                  
-                      <label for="avgPurchase">Average Purchase:</label>
-                      <input type="number" id="avgPurchase" name="avgPurchase" step="0.1" required>
-                  
-                      <button id="submitButton" type="submit">Add Location</button>
+                        
                     </fieldset>
-                  </form>
-            </section>
-            <section class="salesTable">
-                <h2>Cookie Sales by Location</h2>                    
-                <table id="dataTable"></table>
+                </form>
+
             </section>
         </main>
         <footer>

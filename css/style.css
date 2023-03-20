@@ -1,5 +1,6 @@
 html {
     font-family: sans-serif;
+    background-color: #edddc8;
   }
 
 h1 {
@@ -86,11 +87,19 @@ nav a {
   background-color: #a5c3c2;
   background-image: url(img/backgroundfish);
   background-repeat: repeat-x;
+  padding: 20px;
+}
+
+h3 {
+  color: #011d42;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: x-large;
 }
 
 #menu {
  background-color: #a5c3c2;
-
+ color:#011d42;
+ font-family: 'Times New Roman', Times, serif;
 }
 
 .merch {
@@ -122,6 +131,11 @@ nav a {
 
 .controls button {
   margin: 5px;
+  color: #011d42;
+  background-color: #a5c3c2;
+  border: none;
+  border-radius: 15%;
+  padding: 5px 10px;
 }
 
 
@@ -175,11 +189,19 @@ footer {
 
 /* Sales  */
 
+.salesTable {
+  padding: 20px;
+  background-color: #011d42;
+  color: #edddc8
+}
   table {
     border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
+    border: 2px solid #a5c3c2;
     letter-spacing: 1px;
     font-size: 0.8rem;
+    margin: 20px;
+    background-color: #011d42;
+    color: #011d42;
   }
   
   td, th {
@@ -205,4 +227,32 @@ footer {
   
   caption {
     padding: 10px;
+  }
+
+  .newForm {
+    padding: 20px;
+    color:#011d42;
+
+  }
+
+#submitButton {
+    margin: 5px;
+    color: #011d42;
+    background-color: #a5c3c2;
+    border: none;
+    border-radius: 15%;
+    padding: 5px;
+  }
+
+
+  /* Locations */
+
+  .location {
+    display: grid;
+    
+    padding: 30px;
+  }
+
+  .location img {
+    height: 250px;
   }
